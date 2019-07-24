@@ -27,7 +27,7 @@ RSpec.configure do |config|
   #
   def platform(name)
     ENV['PLATFORM'] ||= 'mac_sierra_chrome'
-    SauceWhisk.data_center = :US_WEST
+    SauceWhisk.data_center = :US_EAST
 
     case ENV['PLATFORM']
     when 'windows_10_edge'
